@@ -1,7 +1,9 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import { Toaster } from "react-hot-toast";
 
-export function ThemeProvider() {
-  return
+export const ToastProvider = () => {
+  return ( 
+    <Toaster />
+   );
 };

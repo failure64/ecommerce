@@ -13,6 +13,7 @@ export default async function DashboardLayout({
 }) {
   const { userId } = auth();
 
+
   if (!userId) {
     redirect('/sign-in');
   }
@@ -23,6 +24,7 @@ export default async function DashboardLayout({
       userId,
     }
    });
+
 
   if (!store) {
     redirect('/');
